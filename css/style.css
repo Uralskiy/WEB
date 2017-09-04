@@ -1,0 +1,43 @@
+body {
+	background: gray;
+	margin: 0px;
+	padding: 0px;
+}
+
+.header1 {
+	background: #3c3c3c;
+	height: 100px;
+	width: 100%;
+}
+
+.logo { 
+	height:41px; 
+	width:198px;
+}
+
+
+.telephone {
+	height: 13px;
+	width: 153px;
+}
+
+.section1 {
+	background: green;
+	width: 70%;
+	height: 100px;
+}
+
+.sliderimg1 {
+	height: 150px;
+	width: 263px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img	{
+
+}
+
