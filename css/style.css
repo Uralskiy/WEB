@@ -4,9 +4,14 @@ body {
 	padding: 0px;
 }
 
-.header1 {
+.footer1 {
 	background: #3c3c3c;
 	height: 350px;
+	width: 100%;
+}
+
+.header1 {
+	background: #3c3c3c;
 	width: 100%;
 }
 
