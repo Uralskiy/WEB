@@ -1,17 +1,17 @@
 body {
-	background: gray;
+	background: white;
 	margin: 0px;
 	padding: 0px;
 }
 
-.footer1 {
-	background: #3c3c3c;
+.mainfooter {
+	background: #c3c3c3;
 	height: 350px;
 	width: 100%;
 }
 
-.header1 {
-	background: #3c3c3c;
+.mainheader {
+	background: #c3c3c3;
 	width: 100%;
 }
 
@@ -26,15 +26,17 @@ body {
 	width: 153px;
 }
 
-.section1 {
-	background: green;
-	width: 70%;
-	height: 100px;
-}
-
 .sliderimg1 {
 	height: 150px;
 	width: 263px;
+}
+
+.mainfilter {
+	background: gray;
+}
+
+.promoslider {
+	background: orange;
 }
 
 a {
