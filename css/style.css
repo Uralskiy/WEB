@@ -18,18 +18,7 @@ body {
 .logo { 
 	height:41px; 
 	width:198px;
-}
-
-
-.telephone {
-	height: 13px;
-	width: 153px;
-}
-
-.sliderimg1 {
-	height: 150px;
-	width: 263px;
-}
+}	
 
 .mainfilter {
 	background: gray;
@@ -38,6 +27,56 @@ body {
 .promoslider {
 	background: orange;
 }
+
+/* Дополнительно */
+
+.logo { 
+	height:41px; 
+	width:198px;
+}
+
+.maincatalogavailable {
+
+}
+
+.sliderimg1 {
+	height: 150px;
+	width: 263px;
+}
+
+.maincatalogeimg {
+
+}
+
+.maincatalog-number {
+	width: 20px;
+}
+
+.maincatalog-plus {
+
+}
+
+.maincatalog-minus {
+
+}
+
+.maincatalog-price {
+	color: orange;
+}
+
+.maincatalog-basket {
+	background: orange;
+}
+
+.maincatalog-rub {
+	font-weight: bold;
+}
+
+.maincatalog-next-back {
+	border-radius: 10px;
+}
+
+/* Теги */
 
 a {
 	text-decoration: none;

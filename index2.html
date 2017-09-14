@@ -56,43 +56,95 @@
 			</section>
 			<section>
 				<div class="mainfilter">
-					Filter :D
+					<input type="range" min="0" max="10000" name="filterange" value="1">
+					<span>От 0</span><span>До 10000</span>
 					<a href="#"><img src="http://placehold.it/150x100"></a>
+					<!--Линия-->
+					<p>Производители</p>
+					<ul>
+						<li><input type="checkbox" name=""><label>Lenovo</label></li>
+						<li><input type="checkbox" name=""><label>Phillips</label></li>
+						<li><input type="checkbox" name="" checked><label>Acer</label></li>
+						<li><input type="checkbox" name="" checked><label>HP</label></li>
+					</ul>
+					<!--Линия-->
+					<p>Видеокарта</p>
+					<ul>
+						<li><input type="radio" name="" checked><label>NVidia</label></li>
+						<li><input type="radio" name=""><label>AMD</label></li>
+						<li><input type="radio" name=""><label>Встроенная</label></li>
+					</ul>
+					<!--Линия-->
+					<button>Пременить</button>
+					<button type="reset">Сбросить фильтр</button>
 				</div>
-				<div class="maincatalog">
+				<section class="maincatalog">
 					<ul>
 						<li>
 							<div>
 								<a href="#"><img src="http://placehold.it/150x100"></a>
-								Блок каталога1
+								<img src="#" class="maincatalogavailable">
+								<img src="#" class="maincatalogeimg">
+								<p>Ноутбук Acer</p>
+								<button class="maincatalog-minus">-</button>
+								<input type="text" name="" class="maincatalog-number">
+								<button class="maincatalog-plus">+</button>
+								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
+								<button class="maincatalog-basket">В корзину</button>
+
 							</div>
 						</li>
 						<li>
 							<div>
 								<a href="#"><img src="http://placehold.it/150x100"></a>
-								Блок каталога2
+								<img src="#" class="maincatalogavailable">
+								<img src="#" class="maincatalogeimg">
+								<p>Ноутбук Apple</p>
+								<button class="maincatalog-minus">-</button>
+								<input type="text" name="" class="maincatalog-number">
+								<button class="maincatalog-plus">+</button>
+								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
+								<button class="maincatalog-basket">В корзину</button>
 							</div>
 						</li>
 						<li>
 							<div>
 								<a href="#"><img src="http://placehold.it/150x100"></a>
-								Блок каталога3
+								<img src="#" class="maincatalogavailable">
+								<img src="#" class="maincatalogeimg">
+								<p>Ноутбук HP Pavilion</p>
+								<button class="maincatalog-minus">-</button>
+								<input type="text" name="" class="maincatalog-number">
+								<button class="maincatalog-plus">+</button>
+								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
+								<button class="maincatalog-basket">В корзину</button>
 							</div>
 						</li>
 						<li>
 							<div>
 								<a href="#"><img src="http://placehold.it/150x100"></a>
-								Блок каталога4
+								<img src="#" class="maincatalogavailable">
+								<img src="#" class="maincatalogeimg">
+								<p>Ноутбук HP Pavilion</p>
+								<button class="maincatalog-minus">-</button>
+								<input type="text" name="" class="maincatalog-number">
+								<button class="maincatalog-plus">+</button>
+								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
+								<button class="maincatalog-basket">В корзину</button>
 							</div>
 						</li>
 					</ul>
-				</div>
+					<ul>
+						<li><a href="#"><button class="maincatalog-next-back">Предыдущая</button></a></li>
+						<li><a href="#">1</a></li>	
+
+						<li><a href="#">2</a></li>
+
+						<li><a href="#">1</a></li>
+						<li><a href="#"><button class="maincatalog-next-back">Следующая</button></a></li>
+					</ul>
+				</section>
 				<div>
-					<input type="radio" name="catalogslider" value="1">
-
-					<input type="radio" name="catalogslider" value="2">
-
-					<input type="radio" name="catalogslider" value="3">
 				</div>
 			</section>
 		</main>
