@@ -7,19 +7,20 @@
 </head>
 <body>
 	<header class='mainheader'>
-		<nav>
+		<nav class="wrapper">
 			<div class="usernav">
-				<img class='logo' src='img\logo.png'>
-				<!--<img class='telephone' src='img\telephone.png'><br>-->
+				<a><img class='logo' src='img\logo.png'></a>
+				<!--<img class='telephone' src='img\telephone.png'>-->
 				<a href="tel:+7999000000">+7 999 00 00 00</a>
-				<input class="search" type="search" value="Поиск по сайту">
+				<form>
+					<input class="search" type="search" value="Поиск по сайту">
+				</form>
 				<a href="#">Личный кабинет</a>
 				<a href="#">Карзина</a>
 			</div>
-			<div class="navmenu">
-				<ul>
-					<li><a href="#">Все категории+</a>
-						<ul>
+				<ul class="navmenu">
+					<li><a href="#">Все категории</a><!-- + иконкой -->
+						<ul class="dropdown-menu">
 							<li><a href="#">Роутеры</a></li>
                     		<li><a href="#">Игровые симуляторы</a></li>
 		                    <li><a href="#">Комплектующие</a></li>
@@ -32,17 +33,18 @@
 					<li><a href="#">Гарантия</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
-			</div>
 		</nav>
 	</header>
 		<main>
 			<section class="promoslider">
-				<div>
-					<h2><span style="color:white;">НОУТБУКИ</span> ДЛЯ ОФИСА И ДОМА</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna</p>
-					<button>Подробнее</button>
+				<div class="slide">
+					<div>
+						<h2><span">НОУТБУКИ</span> ДЛЯ ОФИСА И ДОМА</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<a href="">Подробнее</a>
+					</div>
+					<img class='promosliderimg1' src='http://placehold.it/150x100'></img> <!--КАРТИНКА СЛАЙДЕРА 1-->
 				</div>
-				<img class='promosliderimg1' src='http://placehold.it/150x100'></img> <!--КАРТИНКА СЛАЙДЕРА 1-->
 				<div>
 					<input type="radio" name="promoslider" value="1">
 
@@ -54,28 +56,40 @@
 			<section>
 				<ul>
 					<li>
-						<img src="http://placehold.it/150x100">
-						<span>МОНОБЛОКИ И НОУТБУКИ</span>
+						<a href="#">
+							<img src="http://placehold.it/150x100">
+							<h3>МОНОБЛОКИ И НОУТБУКИ</h3>
+						</a>
 					</li>
 					<li>
-						<img src="http://placehold.it/150x100">
-						<span>ПЕРЕФЕРИЯ</span>
-					</li>
-					<li>	
-						<img src="http://placehold.it/150x100">
-						<span>КОМПЛЕКТУЮЩИЕ</span>
-					</li>
-					<li>	
-						<img src="http://placehold.it/150x100">
-						<span>РОУТЕРЫ</span>
+						<a href="#">
+							<img src="http://placehold.it/150x100">
+							<h3>ПЕРЕФЕРИЯ</h3>
+						</a>
 					</li>
 					<li>
-						<img src="http://placehold.it/150x100">
-						<span>НАСТОЛЬНЫЕ ЛАМПЫ</span>
+						<a href="#">
+							<img src="http://placehold.it/150x100">
+							<h3>КОМПЛЕКТУЮЩИЕ</h3>
+						</a>
 					</li>
 					<li>
-						<img src="http://placehold.it/150x100">
-						<span>ИГРОВЫЕ СИМУЛЯТОРЫ</span>
+						<a href="#">	
+							<img src="http://placehold.it/150x100">
+							<h3>РОУТЕРЫ</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://placehold.it/150x100">
+							<h3>НАСТОЛЬНЫЕ ЛАМПЫ</h3>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="http://placehold.it/150x100">
+							<h3>ИГРОВЫЕ СИМУЛЯТОРЫ</h3>
+						</a>
 					</li>
 				</ul>
 			</section>
@@ -87,14 +101,14 @@
 
 					<input type="radio" name="mainslider" value="3">
 				</div>
-				<div>
+				<div>                                                                                
 					<!--Для текста Доставки -->
 				</div>
 				<div>
 					<h2> Гарантия </h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna<br>
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur. Excepteur sint<br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat cupidatat non.</p>
                 	<img src="http://placehold.it/150x100"> <!-- Фотография Гарантии -->
 				</div>
@@ -104,7 +118,7 @@
 			</section>
 			<section>
 				<ul>
-					<li><a href="#"><img src="http://placehold.it/150x100">Реклма1-8</a></li>
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
@@ -118,46 +132,50 @@
 				<section>
 					<h2>НАША КОМПАНИЯ</h2>
 					<!--Мелкая оранжевая линия-->
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco<br> laboris nisi ut aliquip ex ea commodo consequat. Duis aute <br>
-               		irure dolor in reprehenderit in voluptate velit esse cillum dolore<br> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+               		irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					<ul>
-						<li>proident, sunt in culpa qui officia deserunt mollit anim id est<br> laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
-						<li>proident, sunt in culpa qui officia deserunt mollit anim id est<br> laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
-					</ul>
+						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
+						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
+					</ul></p>
 					<a href="#">Напишите нам</a>
 				</section>
 				<article>
 					<h1 style='color:white;'>ПОЧТОВАЯ РАССЫЛКА</h1>
 					<!--Мелкая оранжевая линия-->
-					<p style='color:white;'>Узнавайте первым о новостях, акциях<br> и скидках интернет-магазина.</p>
-					<input type="mail" name="" value="Ваш mail"><br>
-					<span style='color:darkgray; font-size: 10px;'>Указанная информация не будет передана<br> третьим лицам. Вы можете отписаться от<br> почтовой рассылки в любое время</span>
+					<p style='color:white;'>Узнавайте первым о новостях, акциях и скидках интернет-магазина.</p>
+					<input type="mail" name="" value="Ваш mail">
+					<span style='color:darkgray; font-size: 10px;'>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</span>
 				</article>
 			</div>
 		</main>
 		<footer class="mainfooter">
-			<img class='logo' src='img\logo.png'>
-			<span>
+			<a><img class='logo' src='img\logo.png'></a>
+			<p>
 				Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15
 				К 1 ОФИС 456
-			</span>
-			<a href="tel:8-800-6000-606">8-800-6000-606</a>>
+			</p>
+			<a href="tel:8-800-6000-606">8-800-6000-606</a>
+			<a href="#">Личный кабинет</a>
+			<a href="#">Корзина</a>
 			<section>
-				<a href="#">Доставка</a>
-				<a href="#">Гарантия</a>
-				<a href="#">Контакты</a>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 			</section>
 			<a href="#">
 				<img src="http://placehold.it/150x100">
 			</a>
-			<a href="#">Личный кабинет</a>
-			<a href="#">Корзина</a>
 			<section>
 				<p>Все права защещены 2017</p>
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Вконтакте -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- FACEBOOK -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Twitter -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Mail -->
+				<ul>
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Вконтакте -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- FACEBOOK -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Twitter -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Mail -->
+				</ul>
 			</section>
 		</footer>
 </body>

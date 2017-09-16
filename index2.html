@@ -7,42 +7,75 @@
 </head>
 <body>
 	<header class='mainheader'>
-		<nav>
+		<nav class="wrapper">
 			<div class="usernav">
-				<img class='logo' src='img\logo.png'>
-				<!--<img class='telephone' src='img\telephone.png'><br>-->
+				<a><img class='logo' src='img\logo.png'></a>
+				<!--<img class='telephone' src='img\telephone.png'>-->
 				<a href="tel:+7999000000">+7 999 00 00 00</a>
-				<input class="search" type="text" value="Поиск по сайту">
+				<form>
+					<input class="search" type="search" value="Поиск по сайту">
+				</form>
 				<a href="#">Личный кабинет</a>
 				<a href="#">Карзина</a>
 			</div>
-			<div class="navmenu">
-				<ul>
-					<li>Все категории
-						<ul>
-							<li>Роутеры</li>
-                    		<li>Игровые симуляторы</li>
-		                    <li>Комплектующие</li>
-		                    <li>Периферия</li>
-		                    <li>Настольные лампы</li>
-		                    <li>Моноблоки и ноутбуки</li>
+				<ul class="navmenu">
+					<li><a href="#">Все категории</a><!-- + иконкой -->
+						<ul class="dropdown-menu">
+							<li><a href="#">Роутеры</a></li>
+                    		<li><a href="#">Игровые симуляторы</a></li>
+		                    <li><a href="#">Комплектующие</a></li>
+		                    <li><a href="#">Периферия</a></li>
+		                    <li><a href="#">Настольные лампы</a></li>
+		                    <li><a href="#">Моноблоки и ноутбуки</a></li>
 		                </ul>
 					</li>
-					<li>Доставка</li>
-					<li>Гарантия</li>
-					<li>Контакты</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
-			</div>
 		</nav>
 	</header>
 		<main>
-			<span><a href="#">Главная</a> / <a href="#">Каталог</a> / <a href="#">Мноблоки и ноутбуки</a></span>
-			<!--div style="background: black; height: 1px; width: 100%;"> ПОЛОСА-->
-			<h1>Моноблоки и ноутбуки</h1>
+			<div>
+				<span><a href="#">Главная</a> / <a href="#">Каталог</a> / <a href="#">Мноблоки и ноутбуки</a></span>
+				<!--div style="background: black; height: 1px; width: 100%;"> ПОЛОСА-->
+				<h1>Моноблоки и ноутбуки</h1>
+			</div>
 			<section>
-				<div style="background: black">
+				<div class="mainfilter">
+					<div style="background: black">
 					<h2 style="color: white;">ФИЛЬТР</h2>
 				</div>
+					<fieldset>
+						<legend>Стоимость</legend>
+						<input type="range" min="0" max="10000" name="filterange" value="1">
+						<span>От 0</span><span>До 10000</span>
+						<a href="#"><img src="http://placehold.it/150x100"></a>
+					</fieldset>
+						<!--Линия-->
+					<fieldset>
+						<legend>Производители</legend>
+						<ul>
+							<li><input type="checkbox" name=""><label>Lenovo</label></li>
+							<li><input type="checkbox" name=""><label>Phillips</label></li>
+							<li><input type="checkbox" name="" checked><label>Acer</label></li>
+							<li><input type="checkbox" name="" checked><label>HP</label></li>
+						</ul>
+					</fieldset>
+						<!--Линия-->
+					<fieldset>
+						<legend>Видеокарта</legend>
+						<ul>
+							<li><input type="radio" name="" checked><label>NVidia</label></li>
+							<li><input type="radio" name=""><label>AMD</label></li>
+							<li><input type="radio" name=""><label>Встроенная</label></li>
+						</ul>
+					</fieldset>
+						<!--Линия-->
+						<button>Пременить</button>
+						<button type="reset">Сбросить фильтр</button>
+				</div>
+				<section class="maincatalog">
 				<div>
 					<ul>
 						<li><h2> СОРТИРОВВКА </h2></li>
@@ -53,84 +86,53 @@
 						<li>Down</li>
 					</ul>
 				</div>
-			</section>
-			<section>
-				<div class="mainfilter">
-					<input type="range" min="0" max="10000" name="filterange" value="1">
-					<span>От 0</span><span>До 10000</span>
-					<a href="#"><img src="http://placehold.it/150x100"></a>
-					<!--Линия-->
-					<p>Производители</p>
-					<ul>
-						<li><input type="checkbox" name=""><label>Lenovo</label></li>
-						<li><input type="checkbox" name=""><label>Phillips</label></li>
-						<li><input type="checkbox" name="" checked><label>Acer</label></li>
-						<li><input type="checkbox" name="" checked><label>HP</label></li>
-					</ul>
-					<!--Линия-->
-					<p>Видеокарта</p>
-					<ul>
-						<li><input type="radio" name="" checked><label>NVidia</label></li>
-						<li><input type="radio" name=""><label>AMD</label></li>
-						<li><input type="radio" name=""><label>Встроенная</label></li>
-					</ul>
-					<!--Линия-->
-					<button>Пременить</button>
-					<button type="reset">Сбросить фильтр</button>
-				</div>
-				<section class="maincatalog">
 					<ul>
 						<li>
 							<div>
-								<a href="#"><img src="http://placehold.it/150x100"></a>
 								<img src="#" class="maincatalogavailable">
-								<img src="#" class="maincatalogeimg">
+								<a href="#"><img src="http://placehold.it/150x100"></a>
 								<p>Ноутбук Acer</p>
 								<button class="maincatalog-minus">-</button>
 								<input type="text" name="" class="maincatalog-number">
 								<button class="maincatalog-plus">+</button>
-								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
-								<button class="maincatalog-basket">В корзину</button>
-
+								<p class="maincatalog-rub"><span class="maincatalog-price">11020</span>руб</p>
+								<a href='#' class="maincatalog-basket">В корзину</a>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href="#"><img src="http://placehold.it/150x100"></a>
 								<img src="#" class="maincatalogavailable">
-								<img src="#" class="maincatalogeimg">
-								<p>Ноутбук Apple</p>
+								<a href="#"><img src="http://placehold.it/150x100"></a>
+								<p>Ноутбук Acer</p>
 								<button class="maincatalog-minus">-</button>
 								<input type="text" name="" class="maincatalog-number">
 								<button class="maincatalog-plus">+</button>
-								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
-								<button class="maincatalog-basket">В корзину</button>
+								<p class="maincatalog-rub"><span class="maincatalog-price">11020</span>руб</p>
+								<a href='#' class="maincatalog-basket">В корзину</a>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href="#"><img src="http://placehold.it/150x100"></a>
 								<img src="#" class="maincatalogavailable">
-								<img src="#" class="maincatalogeimg">
-								<p>Ноутбук HP Pavilion</p>
+								<a href="#"><img src="http://placehold.it/150x100"></a>
+								<p>Ноутбук Acer</p>
 								<button class="maincatalog-minus">-</button>
 								<input type="text" name="" class="maincatalog-number">
 								<button class="maincatalog-plus">+</button>
-								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
-								<button class="maincatalog-basket">В корзину</button>
+								<p class="maincatalog-rub"><span class="maincatalog-price">11020</span>руб</p>
+								<a href='#' class="maincatalog-basket">В корзину</a>
 							</div>
 						</li>
 						<li>
 							<div>
-								<a href="#"><img src="http://placehold.it/150x100"></a>
 								<img src="#" class="maincatalogavailable">
-								<img src="#" class="maincatalogeimg">
-								<p>Ноутбук HP Pavilion</p>
+								<a href="#"><img src="http://placehold.it/150x100"></a>
+								<p>Ноутбук Acer</p>
 								<button class="maincatalog-minus">-</button>
 								<input type="text" name="" class="maincatalog-number">
 								<button class="maincatalog-plus">+</button>
-								<span class="maincatalog-price">11020</span><span class="maincatalog-rub">руб</span><br>
-								<button class="maincatalog-basket">В корзину</button>
+								<p class="maincatalog-rub"><span class="maincatalog-price">11020</span>руб</p>
+								<a href='#' class="maincatalog-basket">В корзину</a>
 							</div>
 						</li>
 					</ul>
@@ -140,38 +142,39 @@
 
 						<li><a href="#">2</a></li>
 
-						<li><a href="#">1</a></li>
+						<li><a href="#">3</a></li>
 						<li><a href="#"><button class="maincatalog-next-back">Следующая</button></a></li>
 					</ul>
 				</section>
-				<div>
-				</div>
 			</section>
 		</main>
 		<footer class="mainfooter">
-			<img class='logo' src='img\logo.png'>
-			<span>
+			<a><img class='logo' src='img\logo.png'></a>
+			<p>
 				Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15
 				К 1 ОФИС 456
-			</span>
-			<a href="tel:8-800-6000-606">8-800-6000-606</a>>
+			</p>
+			<a href="tel:8-800-6000-606">8-800-6000-606</a>
+			<a href="#">Личный кабинет</a>
+			<a href="#">Корзина</a>
 			<section>
-				<a href="#">Доставка</a>
-				<a href="#">Гарантия</a>
-				<a href="#">Контакты</a>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
 			</section>
 			<a href="#">
 				<img src="http://placehold.it/150x100">
 			</a>
-			<a href="#">Личный кабинет</a>
-			<a href="#">Корзина</a>
 			<section>
 				<p>Все права защещены 2017</p>
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Вконтакте -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- FACEBOOK -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Twitter -->
-				<a href="#"><img src="http://placehold.it/150x100"></a><!-- Mail -->
-
+				<ul>
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Вконтакте -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- FACEBOOK -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Twitter -->
+					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Mail -->
+				</ul>
 			</section>
 		</footer>
 </body>
