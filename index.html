@@ -9,29 +9,29 @@
 	<header class='mainheader'>
 		<nav class="wrapper">
 			<div class="usernav">
-				<a><img class='logo' src='img\logo.png'></a>
+				<a class='alogo'><img class='logo' src='img\logo.png'></a>
 				<!--<img class='telephone' src='img\telephone.png'>-->
-				<a href="tel:+7999000000">+7 999 00 00 00</a>
+				<a class='atele' href="tel:+7999000000">+7 999 00 00 00</a>
 				<form>
 					<input class="search" type="search" value="Поиск по сайту">
 				</form>
 				<a href="#">Личный кабинет</a>
 				<a href="#">Карзина</a>
 			</div>
-				<ul class="navmenu">
-					<li><a href="#">Все категории</a><!-- + иконкой -->
-						<ul class="dropdown-menu">
-							<li><a href="#">Роутеры</a></li>
-                    		<li><a href="#">Игровые симуляторы</a></li>
-		                    <li><a href="#">Комплектующие</a></li>
-		                    <li><a href="#">Периферия</a></li>
-		                    <li><a href="#">Настольные лампы</a></li>
-		                    <li><a href="#">Моноблоки и ноутбуки</a></li>
-		                </ul>
-					</li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
+			<ul class="navmenu">
+				<li class="menuleft"><a href="#">Все категории</a><!-- + иконкой -->
+					<ul class="dropdown-menu">
+						<li><a href="#">Роутеры</a></li>
+                   		<li><a href="#">Игровые симуляторы</a></li>
+	                    <li><a href="#">Комплектующие</a></li>
+	                    <li><a href="#">Периферия</a></li>
+	                    <li><a href="#">Настольные лампы</a></li>
+	                    <li><a href="#">Моноблоки и ноутбуки</a></li>
+	                </ul>
+				</li>
+				<li class="menuright"><a href="#">Доставка</a></li>
+				<li class="menuright"><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
 				</ul>
 		</nav>
 	</header>
@@ -53,8 +53,9 @@
 					<input type="radio" name="promoslider" value="3">
 				</div>
 			</section>
+			<div class="mainline">
 			<section>
-				<ul>
+				<ul class="block3">
 					<li>
 						<a href="#">
 							<img src="http://placehold.it/150x100">
@@ -93,14 +94,14 @@
 					</li>
 				</ul>
 			</section>
-			<section>
-				<div>
-					<input type="radio" name="mainslider" value="1">
+			<section class='sliderinfo'>
+				<ul>
+					<li><input type="radio" name="mainslider" value="1"><label>Доставка</label></li>
 
-					<input type="radio" name="mainslider" value="2">
+					<li><input type="radio" name="mainslider" value="2" checked><label>Гарантия</label></li>
 
-					<input type="radio" name="mainslider" value="3">
-				</div>
+					<li><input type="radio" name="mainslider" value="3"><label>Кредит</label></li>
+				</ul>
 				<div>                                                                                
 					<!--Для текста Доставки -->
 				</div>
@@ -110,14 +111,14 @@
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                 occaecat cupidatat non.</p>
-                	<img src="http://placehold.it/150x100"> <!-- Фотография Гарантии -->
 				</div>
+				<img src="http://placehold.it/150x100">  <!-- Фотография Гарантии -->
 				<div>
 					<!--Для текста Крдит -->
 				</div>
 			</section>
-			<section>
-				<ul>
+			<section class="reklama">
+				<ul class="reklama">
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
@@ -128,7 +129,7 @@
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
 				</ul>
 			</section>
-			<div>
+			<div class="aboutme">
 				<section>
 					<h2>НАША КОМПАНИЯ</h2>
 					<!--Мелкая оранжевая линия-->
@@ -141,34 +142,38 @@
 					<a href="#">Напишите нам</a>
 				</section>
 				<article>
-					<h1 style='color:white;'>ПОЧТОВАЯ РАССЫЛКА</h1>
+					<h1>ПОЧТОВАЯ РАССЫЛКА</h1>
 					<!--Мелкая оранжевая линия-->
-					<p style='color:white;'>Узнавайте первым о новостях, акциях и скидках интернет-магазина.</p>
+					<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина.</p>
 					<input type="mail" name="" value="Ваш mail">
-					<span style='color:darkgray; font-size: 10px;'>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</span>
+					<span>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</span>
 				</article>
 			</div>
 		</main>
 		<footer class="mainfooter">
-			<a><img class='logo' src='img\logo.png'></a>
-			<p>
-				Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15
-				К 1 ОФИС 456
-			</p>
-			<a href="tel:8-800-6000-606">8-800-6000-606</a>
-			<a href="#">Личный кабинет</a>
-			<a href="#">Корзина</a>
-			<section>
-				<ul>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+			<section class='footerstart'>
+				<div>
+					<a><img class='logo' src='img\logo.png'></a>
+					<p>
+						Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15
+						К 1 ОФИС 456
+					</p>
+					<a href="tel:8-800-6000-606">8-800-6000-606</a>
+					<a href="#">Личный кабинет</a>
+					<a href="#">Корзина</a>
+				</div>
+				<div>
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<a href="#">
+						<img src="http://placehold.it/150x100">
+					</a>
+				</div>
 			</section>
-			<a href="#">
-				<img src="http://placehold.it/150x100">
-			</a>
-			<section>
+			<section class="footerlast">
 				<p>Все права защещены 2017</p>
 				<ul>
 					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Вконтакте -->
