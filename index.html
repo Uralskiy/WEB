@@ -1,189 +1,246 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<meta charset="utf-8">
-	<title></title>
-</head>
-<body>
-	<header class='mainheader'>
-		<nav class="wrapper">
-			<div class="usernav">
-				<a class='alogo'><img class='logo' src='img\logo.png'></a>
-				<!--<img class='telephone' src='img\telephone.png'>-->
-				<a class='atele' href="tel:+7999000000">+7 999 00 00 00</a>
-				<form>
-					<input class="search" type="search" value="Поиск по сайту">
-				</form>
-				<a href="#">Личный кабинет</a>
-				<a href="#">Карзина</a>
-			</div>
-			<ul class="navmenu">
-				<li class="menuleft"><a href="#">Все категории</a><!-- + иконкой -->
-					<ul class="dropdown-menu">
-						<li><a href="#">Роутеры</a></li>
-                   		<li><a href="#">Игровые симуляторы</a></li>
-	                    <li><a href="#">Комплектующие</a></li>
-	                    <li><a href="#">Периферия</a></li>
-	                    <li><a href="#">Настольные лампы</a></li>
-	                    <li><a href="#">Моноблоки и ноутбуки</a></li>
-	                </ul>
-				</li>
-				<li class="menuright"><a href="#">Доставка</a></li>
-				<li class="menuright"><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-				</ul>
-		</nav>
-	</header>
-		<main>
-			<section class="promoslider">
-				<div class="slide">
-					<div>
-						<h2><span">НОУТБУКИ</span> ДЛЯ ОФИСА И ДОМА</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-						<a href="">Подробнее</a>
-					</div>
-					<img class='promosliderimg1' src='http://placehold.it/150x100'></img> <!--КАРТИНКА СЛАЙДЕРА 1-->
+    <head>
+        <title>Web-Программирование</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+			<nav>
+				<div class="SupMenu">
+					<ul class="supMenu wrapper">
+						<li class="logo"><a><img src="image/logo.png" alt="MAGNO"></a></li>
+						<li><a href="tel:+79000000000" class="phone">+7 900 000 00 00</a></li>
+						<li><form><input class="search" type="search" placeholder="Поиск по сайту" id="searchOnSite"><a class="searchImage"></a></form></li>
+						<li><a href="#" class="account">Личный кабинет</a></li>
+						<li><a href="#" class="basket">Корзина</a></li>
+					</ul>
 				</div>
-				<div>
-					<input type="radio" name="promoslider" value="1">
-
-					<input type="radio" name="promoslider" value="2">
-
-					<input type="radio" name="promoslider" value="3">
+				<div class="SubMenu">
+					<ul class="subMenu wrapper">
+						<li class="categories"><a href="#" class="pluss">Все категории</a>
+							<ul class="plussMenu">
+								<li><a href="#">Роутеры</a></li>
+								<li><a href="#">Игровые симуляторы</a></li>
+								<li><a href="#">Комплектующие</a></li>
+								<li><a href="#">Периферия</a></li>
+								<li><a href="#">Настольные лампы</a></li>
+								<li><a href="#">Моноблоки и ноутбуки</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="slaider-1 wrapper">
+				<div class="slaider1-main">
+					<div class="slaider-control-switches-1">
+						<div style="background: white" class="circleDec"><label id="l1" for="slaider1-1">  </label></div>
+						<div class="circleDec"><label id="l2" for="slaider1-2">  </label></div>
+						<div class="circleDec"><label id='l3' for="slaider1-3">  </label></div>
+					</div>
+					<input id="slaider1-1" name="slaider1" type="radio">
+					<div class="slaider1-slaid-1 slide">
+						<h2>
+							НОУТБУКИ<br><span>ДЛЯ ОФИСА И ДОМА</span>
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna
+						</p>
+						<a href="#" class="more_detailed">ПОДРОБНЕЕ</a>
+					</div>
+					<input id="slaider1-2" name="slaider1" type="radio">
+					<div class="slaider1-slaid-2 slide">
+						<h2>
+							ВСЯ ПЕРИФЕРИЯ<br><span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span>
+						</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<a href="#" class="more_detailed">ПОДРОБНЕЕ</a>
+					</div>
+					<input id="slaider1-3" name="slaider1" type="radio">
+					<div class="slaider1-slaid-3 slide">
+						<h2>
+							ТОЛЬКО ЭТОЙ ОСЕНЬЮ<br><span>СКИДКА НА ВСЕ НОУТБУКИ</span> 30%
+						</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+						</p>
+						<a href="#" class="more_detailed">ПОДРОБНЕЕ</a>
+					</div>
 				</div>
 			</section>
-			<div class="mainline">
+			<hr>
 			<section>
-				<ul class="block3">
+				<ul class="block3 wrapper">
 					<li>
 						<a href="#">
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Моноблоки и ноутбуки.png">
 							<h3>МОНОБЛОКИ И НОУТБУКИ</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Периферия.png">
 							<h3>ПЕРЕФЕРИЯ</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Комплектующие.png">
 							<h3>КОМПЛЕКТУЮЩИЕ</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">	
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Роутеры.png">
 							<h3>РОУТЕРЫ</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Настольные лампы.png">
 							<h3>НАСТОЛЬНЫЕ ЛАМПЫ</h3>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<img src="http://placehold.it/150x100">
+							<img src="image/Иконки товара. Игровые симуляторы.png">
 							<h3>ИГРОВЫЕ СИМУЛЯТОРЫ</h3>
 						</a>
 					</li>
 				</ul>
 			</section>
-			<section class='sliderinfo'>
+			<hr>
+			<section class="slaider-2 wrapper">
+				<div class="slaider2-main">
+					<div class="slaider-control-switches-2">
+						<label for="slaider2-1">Доставка</label>
+						<label for="slaider2-2">Гарантия</label>
+						<label for="slaider2-3">Кредит</label>
+					</div>
+					<input id="slaider2-1" name="slaider2" type="radio">
+					<div class="slaider2-slaid-1 slide2">
+						<h2>Доставка</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+							do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint
+							occaecat cupidatat non</p>
+					</div>
+					<input id="slaider2-2" name="slaider2" type="radio">
+					<div class="slaider2-slaid-2 slide2">
+						<h2>Гарантия</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+							do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua.	Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco	laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint
+							occaecat cupidatat non</p>
+
+					</div>
+					<input id="slaider2-3" name="slaider2" type="radio">
+					<div class="slaider2-slaid-3 slide2">
+						<h2>Кредит</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+							do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+					</div>
+				</div>
+			</section>
+			<hr>
+			<section class="brends wrapper">
+				<h2 style="display: none">Бренды</h2>
 				<ul>
-					<li><input type="radio" name="mainslider" value="1"><label>Доставка</label></li>
-
-					<li><input type="radio" name="mainslider" value="2" checked><label>Гарантия</label></li>
-
-					<li><input type="radio" name="mainslider" value="3"><label>Кредит</label></li>
-				</ul>
-				<div>                                                                                
-					<!--Для текста Доставки -->
-				</div>
-				<div>
-					<h2> Гарантия </h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non.</p>
-				</div>
-				<img src="http://placehold.it/150x100">  <!-- Фотография Гарантии -->
-				<div>
-					<!--Для текста Крдит -->
-				</div>
-			</section>
-			<section class="reklama">
-				<ul class="reklama">
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li>
+					<li><a href="#"><img src="image/brand1.png" alt="schneider elrctric"></a></li>
+					<li><a href="#"><img src="image/brand2.png" alt="legrand"></a></li>
+					<li><a href="#"><img src="image/brand3.png" alt="bticino"></a></li>
+					<li><a href="#"><img src="image/brand4.png" alt="dekraft"></a></li>
+					<li><a href="#"><img src="image/brand5.png" alt="jung"></a></li>
+					<li><a href="#"><img src="image/brand6.png" alt="gira"></a></li>
+					<li><a href="#"><img src="image/brand7.png" alt="dkc"></a></li>
+					<li><a href="#"><img src="image/brand8.png" alt="cct"></a></li>
 				</ul>
 			</section>
-			<div class="aboutme">
-				<section>
+			<section class="about-us wrapper">
+				<div class="about-us-info">
 					<h2>НАША КОМПАНИЯ</h2>
-					<!--Мелкая оранжевая линия-->
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-               		irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					<hr class="about-us-decLine">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+					irure dolor in reprehenderit in voluptate velit esse cillum dolore
+					eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
 					<ul>
-						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
-						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit.</li>
-					</ul></p>
-					<a href="#">Напишите нам</a>
-				</section>
-				<article>
-					<h1>ПОЧТОВАЯ РАССЫЛКА</h1>
-					<!--Мелкая оранжевая линия-->
-					<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина.</p>
-					<input type="mail" name="" value="Ваш mail">
-					<span>Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</span>
-				</article>
-			</div>
-		</main>
-		<footer class="mainfooter">
-			<section class='footerstart'>
-				<div>
-					<a><img class='logo' src='img\logo.png'></a>
-					<p>
-						Г.МОСКВА, УЛ.СТРОИТЕЛЕЙ, 15
-						К 1 ОФИС 456
-					</p>
-					<a href="tel:8-800-6000-606">8-800-6000-606</a>
-					<a href="#">Личный кабинет</a>
-					<a href="#">Корзина</a>
-				</div>
-				<div>
-					<ul>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Sed ut perspiciatis, unde omnis iste natus error sit</li>
+						<li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Sed ut perspiciatis, unde omnis iste natus error sit</li>
 					</ul>
-					<a href="#">
-						<img src="http://placehold.it/150x100">
-					</a>
+                    <a id='writeUs'><p>НАПИШИТЕ НАМ</p></a>
+				</div>
+				<div class="spam">
+					<h2>ПОЧТОВАЯ РАССЫЛКА</h2>
+					<hr class="spam-decLine">
+					<p>Узнавайте первым о новостях, акциях и скидках интернет-магазина</p>
+					<form>
+						<input name="email" id="email" type="email" class="e-mail" placeholder="Ваш E-mail">
+					</form>
+					<p class="spam-info">Указанная информация не будет передана третьим лицам. Вы можете отписаться от почтовой рассылки в любое время</p>
+					<input type="submit" value="Подписаться" class="subscribe">
 				</div>
 			</section>
-			<section class="footerlast">
-				<p>Все права защещены 2017</p>
-				<ul>
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Вконтакте -->
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- FACEBOOK -->
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Twitter -->
-					<li><a href="#"><img src="http://placehold.it/150x100"></a></li><!-- Mail -->
-				</ul>
-			</section>
+		</main>
+		<footer>
+			<div class="wrapperSupFooter">
+				<div class="sup-footer wrapper">
+					<div class="footer-LogoAddress">
+						<a class="logo"><img src="image/logo.png" alt="MAGNO"></a>
+						<div class="address">
+							<p>Г. МОСКВА, Ул. СТРОИТЕЛЕЙ, 15 К 1 ОФИС 456</p>
+						</div>
+						<ul class="footer-sup-menu">
+							<li><a href="#" class="account">Личный кабинет</a></li>
+							<li><a href="#" class="basket">Корзина</a></li>
+						</ul>
+					</div>
+					<div>
+						<a href="tel:+78005000616" class="phonee">8-800-5000-616</a>
+					</div>
+					<div class="footer-sub-menu">
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Гарантии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.77773891012!2d37.71272895104558!3d55.62328300934625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab3dc1d4c7ff1%3A0x48693f931bfbc3ac!2z0YPQuy4g0JPQtdC90LXRgNCw0LvQsCDQkdC10LvQvtCy0LAsIDQsINCc0L7RgdC60LLQsCwgMTE1NTYz!5e0!3m2!1sru!2sru!4v1511173013543" width="475" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				</div>
+			</div>
+			<div class="wrapperSubFooter">
+				<div class="sub-footer wrapper">
+					<p>Все права защищены 2017</p>
+					<ul>
+						<li class='vk'></li>
+						<li class='facebook'></li>
+						<li class='twitter'></li>
+						<li class='mailru'></li>
+					</ul>
+				</div>
+			</div>
 		</footer>
-</body>
+    </body>
 </html>
-
-<!-- article \ section \ nav \ header \ main \ footer \ div \ span -->
